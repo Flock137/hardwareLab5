@@ -129,6 +129,8 @@ By the end of this lab session, students will be able to:
 
 ## Personal notes
 
+## Manual tuning 
+
 ### Tuning K_p
 Goal: Find a $K_p$ that gives you a reasonably fast response without excessive overshoot (maybe 10-20% overshoot is okay for now).
 Answer: K_p of 2.5 seems good to me 
@@ -142,6 +144,28 @@ Goal: Find value that minimizes overshoot while keeping response reasonably fast
 Pick 0.5
 
 
+### Auto Tuning 
+Ziegler-Nichols Tuning...
+MATLAB PID Tuner...
+ 
+Step Response Characteristics for Ziegler-Nichols Tuning:
+
+| Rise Time | Settling Time | Overshoot | Steady State Error |
+|-----------|---------------|-----------|-------------------|
+| 0.36534   | 2.8373        | 31.427    | 0.00098278        |
+
+Step Response Characteristics for PID Tuner:
+
+| Rise Time | Settling Time | Overshoot | Steady State Error |
+|-----------|---------------|-----------|-------------------|
+| 0.27957   | 1.0919        | 15.767    | 2.1183            |
+
+ 
+Automatic PID Tuning Completed.
+ 
+Ziegler-Nichols PID Gains: Kp = 6, Ki = 7.5, Kd = 1.2
+ 
+PID Tuner Gains: Kp = 10.7949, Ki = 0, Kd = 1.6278
 
 
 

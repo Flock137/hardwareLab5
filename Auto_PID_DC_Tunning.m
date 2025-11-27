@@ -9,7 +9,7 @@ R = 1;     % Electric resistance (Ohms)
 L = 0.5;   % Electric inductance (H)
 
 % Transfer function of the BLDC motor (Plant)
-num_motor = [K];
+num_motor = K;
 den_motor = [L*J, (R*J + L*b), (R*b + K^2)];
 motor_tf = tf(num_motor, den_motor);
 
