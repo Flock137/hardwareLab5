@@ -168,5 +168,17 @@ Ziegler-Nichols PID Gains: Kp = 6, Ki = 7.5, Kd = 1.2
 PID Tuner Gains: Kp = 10.7949, Ki = 0, Kd = 1.6278
 
 
+## All data in a table 
+
+
+| Method          | $K_p$   | $K_i$<br> | $K_d$<br> | Rise Time (s) | Overshoot (%) | Settling Time (s) | Steady State Error (rad/s) |
+| --------------- | ------- | --------- | --------- | ------------- | ------------- | ----------------- | -------------------------- |
+| Manual          | 2.5     | 1         | 0.5       | 0.74          | 17.72         | 3.98              | 0.26                       |
+| Ziegler-Nichols | 6       | 7.5       | 1.2       | 0.36534       | 31.427        | 2.8373            | 0.00098278                 |
+| MATLAB Tuner    | 10.7949 | 0         | 1.6278    | 0.27957       | 15.767        | 1.0919            | 2.1183                     |
+
+
+
+
 
 
